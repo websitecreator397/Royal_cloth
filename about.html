@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Royal Cloth</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Your existing styles from index.html */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #c4bfbf;
+            color: #fff;
+        }
+        
+        .header {
+            background: linear-gradient(to right, #333,);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+        
+        .logo {
+            text-decoration: none;
+        }
+
+        
+        
+        /* About Page Specific Styles */
+        .page-content {
+            margin-top: 100px;
+            padding: 20px;
+        }
+        
+        .page-hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                        url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 50px;
+            border-radius: 10px;
+        }
+        
+        .page-hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #d4af37;
+        }
+        
+        .page-hero p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: 0 auto;
+            color: #efebeb;
+        }
+        
+        .about-content {
+            border-radius: 20px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #292723;
+        }
+        
+        .content-section {
+            margin-bottom: 60px;
+            
+        }
+        
+        .section-title {
+            color: #d4af37;
+            font-size: 32px;
+            margin-bottom: 30px;
+            text-align: center;
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        
+        .section-content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .section-image {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(212, 175, 55, 0.2);
+        }
+        
+        .section-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .section-text {
+            flex: 1;
+            font-size: 16px;
+            line-height: 1.8;
+            color: #ccc;
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .value-card {
+            background: #1a1a1a;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid #333;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        
+        .value-card:hover {
+            transform: translateY(-5px);
+            border-color: #d4af37;
+        }
+        
+        .value-icon {
+            font-size: 40px;
+            color: #d4af37;
+            margin-bottom: 20px;
+        }
+        
+        .value-card h3 {
+            color: #fff;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+        
+        
+        
+        .copyright {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            color: #666;
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                padding: 10px;
+            }
+            
+            .nav {
+                margin: 15px 0;
+                gap: 20px;
+            }
+            
+            .page-hero h1 {
+                font-size: 36px;
+            }
+            
+            .section-content {
+                flex-direction: column;
+            }
+            
+            .section-title {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header matching your site -->
+    <header class="header">
+        <a href="index.html" class="logo">Royal Fashion</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#products">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+        
+        
+    </header>
+
+    <!-- Main Content -->
+    <main class="page-content">
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <h1>About Royal Fashion</h1>
+            <p>Premium fashion that combines luxury with comfort. Since 2010, we've been redefining style.</p>
+        </section>
+
+        <!-- About Content -->
+        <div class="about-content">
+            <!-- Our Story -->
+            <div class="content-section">
+                <h2 class="section-title">Our Story</h2>
+                <div class="section-content">
+                    <div class="section-image">
+                        <img src="https://images.unsplash.com/photo-1577906096429-f73c2c312435?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Our Story">
+                    </div>
+                    <div class="section-text">
+                        <p>Founded in 2010, Royal Fashion began with a simple vision: to create premium clothing that combines luxury with everyday comfort. What started as a small boutique has grown into an international brand known for its quality craftsmanship and timeless designs.</p>
+                        <p>Our journey began with a passion for fine fabrics and attention to detail. Today, we continue to uphold those values while embracing modern trends and sustainable practices.</p>
+                        <p>Every piece in our collection is carefully designed and crafted to ensure exceptional quality and comfort for our customers.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Our Mission -->
+            <div class="content-section">
+                <h2 class="section-title">Our Mission</h2>
+                <div class="section-content">
+                    <div class="section-text">
+                        <p>At Royal Cloth, our mission is to redefine luxury fashion by making it accessible, sustainable, and comfortable. We believe that everyone deserves to feel confident and elegant in their clothing.</p>
+                        <p>We're committed to:</p>
+                        <ul style="color: #ccc; line-height: 1.8;">
+                            <li>Creating timeless pieces that transcend seasonal trends</li>
+                            <li>Using sustainable materials and ethical production methods</li>
+                            <li>Providing exceptional customer experiences</li>
+                            <li>Innovating while honoring traditional craftsmanship</li>
+                            <li>Building a community of fashion-forward individuals</li>
+                        </ul>
+                        <p>Join us on our journey to make luxury fashion more accessible and sustainable.</p>
+                    </div>
+                    <div class="section-image">
+                        <img src="https://images.unsplash.com/photo-1624222244232-5f1ae13bbd53?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Our Mission">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Services</a>
+                <a href="#return">Returns & Exchanges</a>
+                <a href="#shopping">Shopping Info</a>
+                <a href="#support">Customer Support</a>
+            </div>
+            <p>&copy; 2025 LUXE Premium Fashion. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Add any interactive functionality here if needed
+        document.querySelectorAll('.nav a').forEach(link => {
+            if (link.href === window.location.href) {
+                link.style.color = '#d4af37';
+                link.style.fontWeight = 'bold';
+            }
+        });
+    </script>
+</body>
+</html>
